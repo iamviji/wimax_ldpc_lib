@@ -105,7 +105,8 @@ class ldpc_encoder:
     """
         
     def compute_parity(self, M, Z, X, d, V):
-        
+        print ("HI")
+        print (M)
         p_p = np.zeros(M, dtype=np.uint8)
         print (Z)
         print (Z.shape)
