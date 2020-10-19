@@ -107,10 +107,10 @@ class ldpc_encoder:
     def compute_parity(self, M, Z, X, d, V):
         print ("HI")
         print (M)
-        p_p = np.zeros(M, dtype=np.uint8)
+        #p_p = np.zeros(M, dtype=np.uint8)
         print (Z)
         print (Z.shape)
-        p_y = np.zeros(Z.shape[1], dtype=np.uint8)  # To remove error
+        #p_y = np.zeros(Z.shape[1], dtype=np.uint8)  # To remove error
         
         #fwd sub : p_i = l_i-1  + p_i-1'
         for i in range(Z, (X+1)*Z):
